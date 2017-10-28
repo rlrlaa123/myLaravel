@@ -10,8 +10,4 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function() {
-    $items = ['apple', 'banana', 'tomato'];
-
-    return view('welcome');
-});
+Route::resource('articles', 'ArticlesController');
